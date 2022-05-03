@@ -6,4 +6,4 @@ runs:
   - name: Check if branch is up with main
     shell: bash
     run: |
-      if [[ "$(git merge-base main HEAD)" == "$(git rev-parse main)" ]] then; echo "Branch up to date!"; else echo "Branch outdated" && exit 1; fi
+      if [[ "$(git merge-base main HEAD)" == "$(git rev-parse main)" ]] then; echo "Branch up to date"; else echo "Branch outdated" && exit 1; fi
